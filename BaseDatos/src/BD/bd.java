@@ -24,7 +24,11 @@ public class bd {
 		
 		stmt=com.createStatement();
 		String sql;
+		
+		//-----------CONSULTAS MYSQL--------------
 		sql="Select * from libros;";
+		//-----------------------------------------
+		
 		ResultSet rs=stmt.executeQuery(sql);
 		
 		while (rs.next()) {
